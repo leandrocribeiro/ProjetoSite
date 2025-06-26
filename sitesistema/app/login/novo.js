@@ -54,9 +54,6 @@ export default function NovoUsuario() {
   const onSubmit = async (data) => {
     setBusy(true);
 
-    // Hash da senha com um "sal" fixo
-    data.senha = createSHA256Hash(data.senha + "khadfhyf388");
-
     try {
       const resultado = await Inserir(data);
 
