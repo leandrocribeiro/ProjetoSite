@@ -15,6 +15,7 @@ export default function Login() {
   const [senha, setSenha] = useState("");
   const [loading, setLoading] = useState(false);
 
+  // Função do Botão ENTRAR
   const handleLogin = async (e) => {
     e.preventDefault();
     setLoading(true);
